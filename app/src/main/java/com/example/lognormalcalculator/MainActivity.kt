@@ -6,6 +6,7 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myapplication.R
+import kotlin.math.roundToInt
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             val mean = meanEditText.text.toString().toDouble()
             val variance = varianceEditText.text.toString().toDouble()
             val randomNumber = lognormalCalculator.generateRandomLognormalNumber(mean, variance)
-            randomNumberResult.text = randomNumber.toString()
+            randomNumberResult.text = randomNumber.roundToInt().toString()
         }
     }
 

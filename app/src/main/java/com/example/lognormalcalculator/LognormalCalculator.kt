@@ -1,5 +1,7 @@
 package com.example.lognormalcalculator
 
+import kotlin.math.roundToInt
+
 class LognormalCalculator {
 
     internal fun generateRandomLognormalNumber(mean: Double, variance: Double): Double {
